@@ -1,0 +1,133 @@
+.dot-pulse {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  box-shadow: 9999px 0 0 -5px #9880ff;
+  animation: dotPulse 1.5s infinite linear;
+  animation-delay: 0.25s;
+}
+
+.dot-pulse::before,
+.dot-pulse::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+}
+
+.dot-pulse::before {
+  box-shadow: 9984px 0 0 -5px #9880ff;
+  animation: dotPulseBefore 1.5s infinite linear;
+  animation-delay: 0s;
+}
+
+.dot-pulse::after {
+  box-shadow: 10014px 0 0 -5px #9880ff;
+  animation: dotPulseAfter 1.5s infinite linear;
+  animation-delay: 0.5s;
+}
+
+.snippet {
+  margin: 12.5rem 0 !important;
+}
+
+@keyframes dotPulseBefore {
+  0% {
+    box-shadow: 9984px 0 0 -5px #9880ff;
+  }
+  30% {
+    box-shadow: 9984px 0 0 2px #9880ff;
+  }
+  60%,
+  100% {
+    box-shadow: 9984px 0 0 -5px #9880ff;
+  }
+}
+
+@keyframes dotPulse {
+  0% {
+    box-shadow: 9999px 0 0 -5px #9880ff;
+  }
+  30% {
+    box-shadow: 9999px 0 0 2px #9880ff;
+  }
+  60%,
+  100% {
+    box-shadow: 9999px 0 0 -5px #9880ff;
+  }
+}
+
+@keyframes dotPulseAfter {
+  0% {
+    box-shadow: 10014px 0 0 -5px #9880ff;
+  }
+  30% {
+    box-shadow: 10014px 0 0 2px #9880ff;
+  }
+  60%,
+  100% {
+    box-shadow: 10014px 0 0 -5px #9880ff;
+  }
+}
+.snippet {
+  position: relative;
+  margin: 13.5rem 0;
+}
+
+.examples .snippet:before {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 5px;
+  content: attr(data-title);
+  font-size: 0.75rem;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  color: white;
+  background-color: rgb(255, 25, 100);
+  border-radius: 0.25rem 0 0.25rem 0;
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+  margin: 0 -5%;
+  overflow: hidden;
+}
+
+#loading {
+  background: hsla(0, 0%, 100%, 1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.94;
+  overflow: hidden;
+  z-index: 10001;
+  text-align: center;
+  &:before {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 173px;
+    height: 173px;
+    content: "";
+    // background: url("/assets/images/loader.gif") no-repeat;
+    transform: translate(-50%, -50%);
+  }
+}

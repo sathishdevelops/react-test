@@ -1,0 +1,31 @@
+.heading {
+    font-family: 'Helvetica-Light';
+    font-size: 64px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.125;
+    letter-spacing: normal;
+    color: #fff;
+    padding-left: 50px;
+    margin: 0 0 16px;
+}
+
+.sub-text {
+    font-family: 'Helvetica-Light';
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: .4px;
+    color: #fff;
+    margin: 0;
+    max-width: 460px;
+    padding-left: 50px;
+}
+
+.hero-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+}

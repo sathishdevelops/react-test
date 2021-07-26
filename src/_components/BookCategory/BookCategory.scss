@@ -1,0 +1,146 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.category-title {
+    font-family: Helvetica-Medium;
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.27;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding-left: 50px;
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -.2px;
+    color: #fff;
+    max-width: 100%;
+    margin: 0 0 7px;
+}
+
+.book-author {
+    font-size: 13px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: .4px;
+    color: hsla(0, 0%, 100%, .9);
+}
+
+.slider-padding {
+    padding-left: 50px;
+}
+
+.card-text {
+    background: #000000c4;
+}
+
+.book-card {
+    transition: transform 200ms;
+}
+
+.book-card img {
+    display: block;
+    border-radius: 10px;
+}
+
+.book-card:hover {
+    border: 2px solid #fff;
+    transform: scale(1.1);
+    border-radius: 10px !important;
+}
+
+.book-card:hover+.rating {
+    top: -13px;
+    right: -8px;
+}
+
+.slick-prev {
+    left: 0px;
+    transform: rotate(180deg);
+}
+
+.slick-next {
+    right: -9px;
+}
+
+.rating {
+    background: #003366;
+    opacity: 0.90;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: .2px;
+    top: 0;
+    right: 0;
+    border-radius: 0 5px 0 5px;
+    padding: 4px;
+}
+
+.desc-book-name {
+    font-size: 40px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: .6px;
+    color: #c3a572;
+    margin-bottom: 40px;
+    margin-top: 0;
+    max-width: 360px;
+    text-align: left;
+}
+
+.desc-book-img {
+    width: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.desc-book-author {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.desc-book-publisher {
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: .43px;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.desc-book-description {
+    font-family: Helvetica-Light;
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: .4px;
+    color: hsla(0, 0%, 100%, .7);
+    padding: 0 20px 0 0;
+    word-break: break-word;
+}
+
+.pl-50 {
+    padding-left: 50px;
+}
